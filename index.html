@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download E-Book Winning Friends</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+body {
+	font-family: Tahoma;
+	font-size:16px;
+	background-color: #FAFFC5;
+	background-image: url(images/bg_tile.png);
+	margin-top:0px;
+}
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label, input {
+      display: block;
+      width: 100%;
+    }
+    input {
+      padding: 10px;
+      margin-top: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #FAFFC5;
+      color: rgb(0, 0, 0);
+      border: none;
+      cursor: pointer;
+    }
+    .header-image, .ebook-cover, .footer-image {
+      max-width: 100%;
+      height: 200px;
+    }
+    .highlight {
+      color: #d9534f;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="images/header.png" alt="Header Image" class="header-image">
+    </header>
+
+    <main>
+      <h1>DOWNLOAD NOW!</h1>
+      <h2>“Turbo JV Page Builder: Create Effective, Responsive Pages for Your JVs and Affiliates in Just a Few Clicks!”</h2>
+      <h3 class="highlight">You Can Now!</h3>
+
+      <div class="offer-section">
+        <img src="images/ecover.png" alt="eBook Cover" class="ebook-cover">
+
+        <p>To get download, send <strong>$3.50 USDT</strong> via Binance Pay or Wallet.</p>
+        
+        <div class="payment-box">
+          <p><strong>Payment Wallet (USDT TRC20):</strong><br>
+            <code>TMzbeXKtY96h8eomRrPNbVy4wEQ3x8v3Dw</code>
+          </p>
+          <p><strong>OR Binance Pay ID:</strong><br>
+            <code>939887491</code>
+          </p>
+          <p>After payment, fill out the form below:</p>
+        </div>
+
+        <form id="paymentForm">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="txid">Binance Transaction ID:</label>
+            <input type="text" id="txid" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit and Download</button>
+          </div>
+        </form>
+
+        <p class="privacy-note">Your privacy is safe. We never share your details.</p>
+        <p class="urgency-note">Hurry! This offer is limited — <span class="highlight">Claim now!</span></p>
+      </div>
+
+      <footer>
+        <img src="images/footer.png" alt="Footer Image" class="footer-image">
+      </footer>
+    </main>
+  </div>
+
+ <script>
+  document.getElementById('paymentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const txid = document.getElementById('txid').value.trim();
+    const phone = '+201095553849';
+
+    // Check for empty fields
+    if (!name || !email || !txid) {
+      alert('Please fill in all fields.');
+      return;
+    }
+
+
+
+    const message = `Hello, I want get on E-Book Winning Friends and just made a Binance payment.%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0ATransaction ID: ${encodeURIComponent(txid)}`;
+    const whatsappURL = `https://wa.me/${phone}?text=${message}`;
+
+    window.open(whatsappURL, '_blank');
+  });
+</script>
+
+</body>
+</html>
